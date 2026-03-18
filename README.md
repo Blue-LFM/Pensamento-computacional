@@ -3,9 +3,20 @@ Para resolver esse problema, a prefeitura decidiu instalar um sistema de sinaliz
 O sinal dos pedestres possui duas luzes: vermelho e verde.
 A prefeitura pediu que você desenvolva uma simulação desse sistema utilizando Arduino no Tinkercad, controlando as luzes por meio de LEDs.
 
+Análise:
 O sinal dos carros possui 3 luzes: verde, amarelo e vermelho; ou seja, 3 LEDs.
 O sinal dos pedestres possui duas luzes: vermelho e verde; ou seja, 2 LEDs.
+Logo, serão necessários 5 LEDs.
 
-Premissas: As luzes devem acender e apagar em intervalos, sendo que as luzes de mesma cor não devem acender ao mesmo tempo. 
+Encontrar uma solução: 
+As luzes devem acender e apagar em intervalos, sendo que as luzes de mesma cor não devem acender ao mesmo tempo. 
 Deve haver um intervalo entre o sinal vermelho dos carros e o sinal verde dos pedestres, e entre o sinal vermelho dos pedestres e o sinal verde dos carros.
 
+Implemementar uma solução:
+Entre o acender da luz vermelha dos pedestres e o acender da luz verde dos carros, há um intervalo de 10 segundos, evitando possiveis acidentes.
+Entre a luz verde e a luz amarela dos carros, há um intervalo de 30 segundos.
+Entre a luz amarela e vermelha dos carros, há um intervalo de 15 segundos.
+Entre a luz vermelha dos carros e a luz verde dos pedestres, há um intervalo de 10 segundos.
+Há um intervalo de 45 segundos entre a luz verde e a luz vermelha dos pedestres.
+
+Avaliação da solução: Em situações da vida real, essa solução seria eficiente para um bom andamento do trânsito.
